@@ -8,6 +8,9 @@ export default Ember.Route.extend({
     },
     committees() {
       this.transitionTo('committees');
+    },
+    billList(){
+      this.transitionTo('bill-list');
     }
-    }
+  }
 });

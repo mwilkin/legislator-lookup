@@ -1,0 +1,7 @@
+<h1>Recent Private Law List</h1>
+<ul>
+  {{#each model as |law|}}
+    <li>{{#link-to 'bill-detail' law.bill_id}} chamber: {{law.chamber}} : {{law.official_title}}{{/link-to}}
+    </li>
+  {{/each}}
+</ul>
